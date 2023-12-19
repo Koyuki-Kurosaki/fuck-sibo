@@ -30,3 +30,8 @@ jobs:
     - name: Run
       run: |
         python ./main.py
+      env:
+          LOGIN_NAME: ${{ secrets.LOGIN_NAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          SCHOOL_ID: ${{ secrets.SCHOOL_ID }}
+          LENGTH: ${{ secrets.LENGTH }}
