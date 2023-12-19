@@ -1,7 +1,8 @@
-LOGIN_NAME = "2023404730"
-PASSWORD = "134679Dx"
-SCHOOL_ID = "7fffb34f4e254b34a056448cd86c7d53"
-LENGTH = 1000
+import os
+LOGIN_NAME = os.getenv('LOGIN_NAME')
+PASSWORD = os.getenv('PASSWORD')
+SCHOOL_ID = os.getenv('SCHOOL_ID')
+LENGTH = int(os.getenv('LENGTH'))
 
 URL = "http://englishservice.siboenglish.com//MobService/index"
 HEADER = {
