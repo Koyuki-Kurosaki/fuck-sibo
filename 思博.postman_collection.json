@@ -1,0 +1,531 @@
+{
+	"info": {
+		"_postman_id": "c6bb25a2-5961-4a4c-a4f9-491a1d4ff480",
+		"name": "思博",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10478456"
+	},
+	"item": [
+		{
+			"name": "登录",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "okhttp/3.12.12",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "Keep-Alive",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "jyh",
+							"value": "4002_01",
+							"type": "text"
+						},
+						{
+							"key": "parm",
+							"value": "{'schoolID': '{{schoolID}}', 'loginName': '{{loginName}}', 'password': '{{password}}', 'ts': 2, 'appVersion': '4.5.0'}",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ts",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://englishservice.siboenglish.com/MobService/index",
+					"protocol": "http",
+					"host": [
+						"englishservice",
+						"siboenglish",
+						"com"
+					],
+					"path": [
+						"MobService",
+						"index"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取题目",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "okhttp/3.12.12",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "Keep-Alive",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "jyh",
+							"value": "2002",
+							"type": "text"
+						},
+						{
+							"key": "parm",
+							"value": "{'keyWord': '', 'eassyType': '', 'grade': {{grade}}, 'orderType': 1, 'pageStart': 0, 'pageSize': 2000000000, 'ts': 2, 'userID': '{{userID}}', 'classID': '{{classID}}'}",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ts",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://englishservice.siboenglish.com/MobService/index",
+					"protocol": "http",
+					"host": [
+						"englishservice",
+						"siboenglish",
+						"com"
+					],
+					"path": [
+						"MobService",
+						"index"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取教师id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "okhttp/3.12.12",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "jyh",
+							"value": "1001",
+							"type": "text"
+						},
+						{
+							"key": "parm",
+							"value": "{\"userID\":\"{{userID}}\",\"ts\":2}",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ts",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://englishservice.siboenglish.com/MobService/index",
+					"protocol": "http",
+					"host": [
+						"englishservice",
+						"siboenglish",
+						"com"
+					],
+					"path": [
+						"MobService",
+						"index"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取原文",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "okhttp/3.12.12",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "jyh",
+							"value": "2020",
+							"type": "text"
+						},
+						{
+							"key": "parm",
+							"value": "{\"essayID\":\"12cf80204ed1458592beda42aad54846\"}",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ts",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://englishservice.siboenglish.com/MobService/index",
+					"protocol": "http",
+					"host": [
+						"englishservice",
+						"siboenglish",
+						"com"
+					],
+					"path": [
+						"MobService",
+						"index"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取答案",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "okhttp/3.12.12",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "jyh",
+							"value": "2009",
+							"type": "text"
+						},
+						{
+							"key": "parm",
+							"value": "{\"essayID\":\"5eb9ee57e77940b0aca3b872d2010266\"}",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ts",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://englishservice.siboenglish.com/MobService/index",
+					"protocol": "http",
+					"host": [
+						"englishservice",
+						"siboenglish",
+						"com"
+					],
+					"path": [
+						"MobService",
+						"index"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "提交答案",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "okhttp/3.12.12",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "jyh",
+							"value": "2010",
+							"type": "text"
+						},
+						{
+							"key": "parm",
+							"value": "{\"essayID\":\"5eb9ee57e77940b0aca3b872d2010266\",\"userID\":\"{{userID}}\",\"classID\":\"{{classID}}\",\"createTime\":\"2023-11-26T10:41:21\",\"itemResult\":\"1-C;2-D;3-B;4-B;5-C\"}",
+							"type": "text"
+						},
+						{
+							"key": "sign",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ts",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://englishservice.siboenglish.com/MobService/index",
+					"protocol": "http",
+					"host": [
+						"englishservice",
+						"siboenglish",
+						"com"
+					],
+					"path": [
+						"MobService",
+						"index"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "schoolID",
+			"value": ""
+		},
+		{
+			"key": "loginName",
+			"value": ""
+		},
+		{
+			"key": "password",
+			"value": ""
+		},
+		{
+			"key": "userID",
+			"value": ""
+		},
+		{
+			"key": "classID",
+			"value": ""
+		},
+		{
+			"key": "grade",
+			"value": ""
+		}
+	]
+}
